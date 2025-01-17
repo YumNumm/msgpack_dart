@@ -11,6 +11,8 @@ class Deserializer {
   final ByteData _data;
   int _offset = 0;
 
+  int get offset => _offset;
+
   Deserializer(
     Uint8List list, {
     ExtDecoder? extDecoder,
